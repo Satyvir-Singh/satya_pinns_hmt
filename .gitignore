@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Large run artifacts (regenerate via scripts/run_all.sh)
+*.pt
+runs/**/eval/fields_201x201.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

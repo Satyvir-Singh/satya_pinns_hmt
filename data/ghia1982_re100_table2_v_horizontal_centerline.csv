@@ -1,0 +1,31 @@
+# Ghia, U., Ghia, K. N., Shin, C. T. (1982). High-Re solutions for incompressible flow using the
+# Navier-Stokes equations and a multigrid method. J. Comput. Phys. 48, 387-411. DOI 10.1016/0021-9991(82)90058-4
+# TABLE II: v-velocity along the horizontal line through the geometric centre of the cavity (y = 0.5). Column Re = 100.
+# Ghia's solution: 129 x 129 uniform grid (numerical reference data, not an exact solution).
+# Coordinates as printed (4 decimals, i.e. rounded grid nodes k/128); velocities as printed (5 decimals).
+# Row order follows the printed table (x descending).
+# TRANSCRIPTION STATUS: UNVERIFIED against the original article (publisher page returned HTTP 403; no copy accessible).
+# Secondary sources used, which agree on every Re = 100 value and coordinate in this file:
+#   [S1] GitHub user "ivan-pi", gist ghiav.txt (2019-04-18) https://gist.github.com/ivan-pi/caa6c6737d36a9140fbcf2ea59c78b3c
+#   [S2] Uppsala University degree project (Examensarbete 15 hp, June 2022, DiVA diva2:1668016) Table 1, https://uu.diva-portal.org/smash/get/diva2:1668016/FULLTEXT01.pdf
+# Note: some copies in circulation swap the values at x = 0.9531 and x = 0.9453; both S1 and S2 give the
+# monotone ordering used here (0.9531 -> -0.08864, 0.9453 -> -0.10313). See data/PROVENANCE.md.
+# Transcribed into this file on 2026-10-11.
+x,v
+1.0000,0.00000
+0.9688,-0.05906
+0.9609,-0.07391
+0.9531,-0.08864
+0.9453,-0.10313
+0.9063,-0.16914
+0.8594,-0.22445
+0.8047,-0.24533
+0.5000,0.05454
+0.2344,0.17527
+0.2266,0.17507
+0.1563,0.16077
+0.0938,0.12317
+0.0781,0.10890
+0.0703,0.10091
+0.0625,0.09233
+0.0000,0.00000

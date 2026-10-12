@@ -1,0 +1,54 @@
+experiment:
+  name: re100
+  output_dir: runs
+  seeds:
+  - 101
+  - 202
+  - 303
+  baseline_seed: 101
+  sensitivity_seed: 101
+physics:
+  re: 100.0
+  gauge_point:
+  - 0.5
+  - 0.5
+model:
+  width: 64
+  depth: 6
+sampling:
+  n_interior: 10000
+  near_wall_fraction: 0.2
+  near_wall_delta: 0.05
+  n_boundary_per_wall: 500
+  refresh_every: 500
+weights:
+  continuity: 1.0
+  momentum_u: 1.0
+  momentum_v: 1.0
+  wall: 10.0
+  gauge: 1.0
+adam:
+  iterations: 150
+  lr: 0.001
+  decay_rate: 0.5
+  decay_steps: 2000
+lbfgs:
+  iterations: 60
+  max_iter_per_step: 20
+  history_size: 50
+  tolerance_grad: 1.0e-12
+  tolerance_change: 1.0e-15
+  line_search: strong_wolfe
+training:
+  device: auto
+  num_threads: 4
+  log_every: 50
+  checkpoint_every: 100
+evaluation:
+  heldout_interior: 20000
+  heldout_seed: 987654321
+  boundary_per_wall: 4000
+  boundary_seed: 192837465
+  near_corner_radius: 0.05
+  grid_n: 201
+  batch_size: 4096

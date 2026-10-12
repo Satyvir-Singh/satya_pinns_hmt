@@ -1,0 +1,20 @@
+seed 101  status=done  adam=6000 lbfgs=4000 evals=10599  train_time=11186s
+  FAIL  centerline_u_rmse<=0.01                  3.195e-02
+  FAIL  centerline_u_maxabs<=0.03                6.340e-02
+  FAIL  centerline_v_rmse<=0.01                  3.397e-02
+  FAIL  centerline_v_maxabs<=0.03                5.654e-02
+  FAIL  pde_continuity_rms<=0.001                1.087e-01
+  FAIL  pde_momentum_u_rms<=0.001                9.577e-01
+  FAIL  pde_momentum_v_rms<=0.001                4.167e-01
+  PASS  wall_top_u_rms<=0.01                     9.541e-03
+  PASS  wall_top_v_rms<=0.01                     3.462e-03
+  PASS  wall_bottom_u_rms<=0.01                  1.465e-03
+  PASS  wall_bottom_v_rms<=0.01                  1.918e-03
+  FAIL  wall_left_u_rms<=0.01                    2.529e-02
+  PASS  wall_left_v_rms<=0.01                    2.162e-03
+  FAIL  wall_right_u_rms<=0.01                   1.527e-02
+  PASS  wall_right_v_rms<=0.01                   5.036e-03
+  PASS  gauge_abs<=0.0001                        5.972e-05
+  pde continuity  rms=1.09e-01 max=1.50e+01 rms(excl. r<0.05 of upper corners)=1.95e-02
+  pde momentum_u  rms=9.58e-01 max=1.34e+02 rms(excl. r<0.05 of upper corners)=2.86e-02
+  pde momentum_v  rms=4.17e-01 max=5.69e+01 rms(excl. r<0.05 of upper corners)=2.92e-02

@@ -1,0 +1,61 @@
+# Steady 2-D lid-driven cavity, Re = 100 -- PINN configuration.
+# Every value can be overridden from the command line with  --set section.key=value
+experiment:
+  name: re100
+  output_dir: runs
+  # Seeds predefined before any training.  The reported baseline seed and the
+  # sensitivity-study seed were fixed in advance (not chosen from results).
+  seeds: [101, 202, 303]
+  baseline_seed: 101
+  sensitivity_seed: 101
+
+physics:
+  re: 100.0
+  gauge_point: [0.5, 0.5]       # p(0.5, 0.5) = 0
+
+model:
+  width: 64
+  depth: 6                      # hidden layers; tanh; Xavier-normal init; 3 linear outputs
+
+sampling:
+  n_interior: 10000
+  near_wall_fraction: 0.2       # alpha: share of interior points placed in near-wall bands
+  near_wall_delta: 0.05         # band thickness
+  n_boundary_per_wall: 500      # open segments, upper corners excluded
+  refresh_every: 500            # Adam iterations between interior re-draws (0 = never)
+
+weights:                        # fixed for the whole run (no adaptive weighting)
+  continuity: 1.0
+  momentum_u: 1.0
+  momentum_v: 1.0
+  wall: 10.0                    # multiplies the SUM of the four per-wall mean losses
+  gauge: 1.0
+
+adam:
+  iterations: 6000
+  lr: 1.0e-3
+  decay_rate: 0.5               # lr <- lr * decay_rate every decay_steps (applied smoothly per step)
+  decay_steps: 2000
+
+lbfgs:
+  iterations: 4000              # total L-BFGS iterations
+  max_iter_per_step: 50         # iterations per optimizer.step call (log/checkpoint granularity)
+  history_size: 50
+  tolerance_grad: 1.0e-12
+  tolerance_change: 1.0e-15
+  line_search: strong_wolfe
+
+training:
+  device: auto                  # auto | cpu | cuda
+  num_threads: 4                # CPU intra-op threads (0 = PyTorch default)
+  log_every: 50                 # Adam iterations between log records
+  checkpoint_every: 500         # iterations between resumable checkpoints
+
+evaluation:
+  heldout_interior: 20000       # fixed uniform held-out residual points
+  heldout_seed: 987654321
+  boundary_per_wall: 4000       # independent boundary evaluation points (uniform random, open segments)
+  boundary_seed: 192837465
+  near_corner_radius: 0.05      # wall points within this distance of an upper corner are reported separately
+  grid_n: 201                   # structured export grid (n x n incl. boundaries)
+  batch_size: 4096

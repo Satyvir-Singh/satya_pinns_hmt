@@ -1,0 +1,42 @@
+== training runs/re100_seed101
+device=cpu threads=4 cpu=11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+nearest boundary training point to upper corners: {'upper_left': 0.0007280260324478149, 'upper_right': 0.00024022627621889114}
+[adam       1] total=9.144e+00 c=1.41e-01 mu=1.72e-01 mv=5.05e-02 top=6.35e-01 bot=1.36e-01 lft=5.34e-02 rgt=5.33e-02 g=0.0e+00 lr=1.00e-03 evals=1 t=1s mem=1255MB
+[adam      50] total=2.630e+00 c=3.78e-01 mu=4.31e-02 mv=2.37e-03 top=9.92e-02 bot=8.77e-03 lft=5.40e-02 rgt=5.79e-02 g=7.8e-03 lr=9.83e-04 evals=50 t=56s mem=1265MB
+[adam     100] total=1.972e+00 c=3.64e-01 mu=1.97e-02 mv=2.18e-02 top=7.60e-02 bot=3.98e-03 lft=4.46e-02 rgt=3.20e-02 g=3.8e-06 lr=9.66e-04 evals=100 t=119s mem=1265MB
+[adam     150] total=8.714e-01 c=4.43e-02 mu=1.48e-02 mv=1.27e-02 top=2.49e-02 bot=9.52e-04 lft=2.79e-02 rgt=2.62e-02 g=1.2e-04 lr=9.50e-04 evals=150 t=172s mem=1265MB
+[adam     200] total=5.175e-01 c=3.55e-03 mu=3.36e-02 mv=7.38e-03 top=1.67e-02 bot=8.03e-05 lft=1.51e-02 rgt=1.53e-02 g=2.8e-07 lr=9.33e-04 evals=200 t=225s mem=1265MB
+[adam     250] total=4.990e-01 c=6.95e-03 mu=4.42e-02 mv=9.88e-03 top=1.65e-02 bot=6.15e-04 lft=1.34e-02 rgt=1.33e-02 g=6.6e-07 lr=9.17e-04 evals=250 t=280s mem=1265MB
+[adam     300] total=4.551e-01 c=6.19e-03 mu=5.08e-02 mv=1.09e-02 top=1.01e-02 bot=6.58e-06 lft=1.35e-02 rgt=1.51e-02 g=1.2e-07 lr=9.02e-04 evals=300 t=364s mem=1265MB
+[adam     350] total=4.497e-01 c=6.52e-03 mu=4.58e-02 mv=1.08e-02 top=1.09e-02 bot=3.26e-05 lft=1.30e-02 rgt=1.48e-02 g=1.1e-09 lr=8.86e-04 evals=350 t=424s mem=1265MB
+[adam     400] total=4.442e-01 c=6.60e-03 mu=4.75e-02 mv=1.13e-02 top=9.98e-03 bot=1.25e-05 lft=1.28e-02 rgt=1.51e-02 g=1.5e-07 lr=8.71e-04 evals=400 t=477s mem=1265MB
+[adam     450] total=5.295e-01 c=6.68e-03 mu=5.63e-02 mv=1.14e-02 top=9.95e-03 bot=1.64e-04 lft=1.57e-02 rgt=1.97e-02 g=2.2e-06 lr=8.56e-04 evals=450 t=529s mem=1265MB
+[adam     500] total=4.343e-01 c=6.74e-03 mu=4.39e-02 mv=1.11e-02 top=1.01e-02 bot=2.24e-05 lft=1.21e-02 rgt=1.50e-02 g=1.2e-07 lr=8.41e-04 evals=500 t=581s mem=1265MB
+[adam     550] total=4.345e-01 c=8.08e-03 mu=4.02e-02 mv=1.10e-02 top=1.01e-02 bot=4.32e-04 lft=1.21e-02 rgt=1.49e-02 g=7.3e-07 lr=8.27e-04 evals=550 t=634s mem=1265MB
+[adam     600] total=4.312e-01 c=6.79e-03 mu=3.51e-02 mv=1.03e-02 top=1.36e-02 bot=9.43e-05 lft=1.06e-02 rgt=1.36e-02 g=1.1e-10 lr=8.13e-04 evals=600 t=694s mem=1265MB
+[adam     650] total=4.100e-01 c=7.24e-03 mu=3.89e-02 mv=1.05e-02 top=9.55e-03 bot=3.06e-05 lft=1.09e-02 rgt=1.48e-02 g=1.0e-06 lr=7.99e-04 evals=650 t=774s mem=1265MB
+[adam     700] total=4.410e-01 c=8.36e-03 mu=2.96e-02 mv=1.03e-02 top=1.77e-02 bot=1.67e-04 lft=9.24e-03 rgt=1.21e-02 g=8.5e-06 lr=7.85e-04 evals=700 t=856s mem=1265MB
+[adam     750] total=3.890e-01 c=9.26e-03 mu=3.49e-02 mv=1.13e-02 top=8.65e-03 bot=2.69e-05 lft=1.00e-02 rgt=1.47e-02 g=1.8e-06 lr=7.71e-04 evals=750 t=937s mem=1265MB
+[adam     800] total=4.113e-01 c=1.39e-02 mu=2.74e-02 mv=1.27e-02 top=1.34e-02 bot=6.35e-04 lft=9.38e-03 rgt=1.23e-02 g=1.3e-05 lr=7.58e-04 evals=800 t=1020s mem=1265MB
+[adam     850] total=3.685e-01 c=1.14e-02 mu=3.12e-02 mv=1.40e-02 top=8.30e-03 bot=1.49e-05 lft=9.07e-03 rgt=1.38e-02 g=4.7e-07 lr=7.45e-04 evals=850 t=1105s mem=1265MB
+[adam     900] total=3.758e-01 c=1.15e-02 mu=3.53e-02 mv=1.51e-02 top=6.41e-03 bot=1.34e-05 lft=9.52e-03 rgt=1.54e-02 g=4.7e-06 lr=7.32e-04 evals=900 t=1189s mem=1265MB
+[adam     950] total=3.497e-01 c=1.16e-02 mu=3.06e-02 mv=1.59e-02 top=7.36e-03 bot=2.37e-05 lft=8.54e-03 rgt=1.32e-02 g=9.9e-08 lr=7.20e-04 evals=950 t=1257s mem=1265MB
+[adam    1000] total=3.414e-01 c=1.11e-02 mu=3.15e-02 mv=1.63e-02 top=6.65e-03 bot=2.16e-05 lft=8.41e-03 rgt=1.32e-02 g=2.2e-07 lr=7.07e-04 evals=1000 t=1310s mem=1265MB
+[adam    1050] total=3.325e-01 c=1.04e-02 mu=3.25e-02 mv=1.66e-02 top=6.53e-03 bot=1.45e-05 lft=8.12e-03 rgt=1.26e-02 g=6.9e-07 lr=6.95e-04 evals=1050 t=1363s mem=1265MB
+[adam    1100] total=3.269e-01 c=9.61e-03 mu=2.66e-02 mv=1.66e-02 top=8.80e-03 bot=7.34e-05 lft=7.01e-03 rgt=1.15e-02 g=1.3e-06 lr=6.83e-04 evals=1100 t=1416s mem=1265MB
+[adam    1150] total=3.143e-01 c=9.10e-03 mu=2.90e-02 mv=1.65e-02 top=7.45e-03 bot=5.67e-05 lft=7.08e-03 rgt=1.14e-02 g=2.4e-07 lr=6.72e-04 evals=1150 t=1468s mem=1265MB
+[adam    1200] total=3.070e-01 c=8.17e-03 mu=3.21e-02 mv=1.63e-02 top=6.58e-03 bot=2.16e-05 lft=6.82e-03 rgt=1.16e-02 g=3.9e-07 lr=6.60e-04 evals=1200 t=1520s mem=1265MB
+[adam    1250] total=2.966e-01 c=8.53e-03 mu=2.79e-02 mv=1.63e-02 top=6.81e-03 bot=5.15e-05 lft=6.72e-03 rgt=1.08e-02 g=7.1e-09 lr=6.49e-04 evals=1250 t=1573s mem=1265MB
+[adam    1300] total=2.903e-01 c=8.71e-03 mu=3.06e-02 mv=1.65e-02 top=5.94e-03 bot=2.50e-05 lft=6.94e-03 rgt=1.06e-02 g=2.5e-07 lr=6.38e-04 evals=1300 t=1632s mem=1265MB
+[adam    1350] total=2.797e-01 c=8.56e-03 mu=2.59e-02 mv=1.66e-02 top=6.44e-03 bot=3.71e-05 lft=6.26e-03 rgt=1.01e-02 g=2.5e-08 lr=6.27e-04 evals=1350 t=1687s mem=1265MB
+[adam    1400] total=2.738e-01 c=8.07e-03 mu=2.69e-02 mv=1.70e-02 top=6.09e-03 bot=2.25e-05 lft=5.99e-03 rgt=1.01e-02 g=3.1e-06 lr=6.16e-04 evals=1400 t=1749s mem=1265MB
+[adam    1450] total=2.652e-01 c=8.74e-03 mu=2.47e-02 mv=1.74e-02 top=5.86e-03 bot=2.17e-05 lft=6.04e-03 rgt=9.53e-03 g=3.1e-07 lr=6.05e-04 evals=1450 t=1803s mem=1265MB
+[adam    1500] total=2.580e-01 c=8.42e-03 mu=2.12e-02 mv=1.76e-02 top=6.56e-03 bot=2.44e-05 lft=5.34e-03 rgt=9.16e-03 g=1.1e-08 lr=5.95e-04 evals=1500 t=1866s mem=1265MB
+[adam    1550] total=2.582e-01 c=8.63e-03 mu=1.75e-02 mv=1.76e-02 top=8.04e-03 bot=7.97e-05 lft=4.56e-03 rgt=8.77e-03 g=1.7e-07 lr=5.85e-04 evals=1550 t=1926s mem=1265MB
+[adam    1600] total=2.431e-01 c=8.84e-03 mu=2.04e-02 mv=1.79e-02 top=5.93e-03 bot=1.48e-05 lft=5.05e-03 rgt=8.61e-03 g=7.1e-08 lr=5.75e-04 evals=1600 t=2001s mem=1265MB
+[adam    1650] total=2.402e-01 c=8.66e-03 mu=1.72e-02 mv=1.78e-02 top=6.87e-03 bot=4.20e-05 lft=4.49e-03 rgt=8.24e-03 g=5.4e-07 lr=5.65e-04 evals=1650 t=2072s mem=1265MB
+[adam    1700] total=2.321e-01 c=8.68e-03 mu=1.71e-02 mv=1.77e-02 top=6.38e-03 bot=2.86e-05 lft=4.48e-03 rgt=7.98e-03 g=1.8e-07 lr=5.55e-04 evals=1700 t=2134s mem=1265MB
+[adam    1750] total=2.252e-01 c=8.73e-03 mu=2.06e-02 mv=1.77e-02 top=5.11e-03 bot=1.13e-05 lft=4.87e-03 rgt=7.82e-03 g=2.1e-06 lr=5.45e-04 evals=1750 t=2193s mem=1265MB
+[adam    1800] total=2.253e-01 c=9.04e-03 mu=2.34e-02 mv=1.77e-02 top=4.55e-03 bot=2.28e-05 lft=5.30e-03 rgt=7.64e-03 g=4.6e-06 lr=5.36e-04 evals=1800 t=2255s mem=1265MB
+[adam    1850] total=2.125e-01 c=8.91e-03 mu=1.84e-02 mv=1.73e-02 top=4.87e-03 bot=5.19e-06 lft=4.69e-03 rgt=7.23e-03 g=8.0e-07 lr=5.27e-04 evals=1850 t=2318s mem=1265MB
+[adam    1900] total=2.063e-01 c=8.44e-03 mu=1.49e-02 mv=1.67e-02 top=5.61e-03 bot=1.43e-05 lft=4.09e-03 rgt=6.91e-03 g=1.5e-10 lr=5.18e-04 evals=1900 t=2376s mem=1265MB
